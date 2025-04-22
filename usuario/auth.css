@@ -1,0 +1,136 @@
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f917c, #7d4ca0);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+.container {
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+}
+
+/* Caja del login */
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* Título */
+.login-box h1 {
+  margin-bottom: 20px;
+  color: #0f917c;
+}
+
+/* Etiquetas */
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Botón */
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0f917c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0c7d6a;
+}
+
+/* Enlaces */
+.links {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Enlaces resaltados en azul */
+.links .highlight {
+  color: #1360b3;
+  font-weight: bold; /* opcional, para más énfasis */
+  text-decoration: none;
+}
+
+.links .highlight:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  /* Logo más pequeño */
+  .logo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  /* Título más compacto */
+  .login-box h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Etiquetas e inputs con fuente y padding menor */
+  form label {
+    font-size: 0.9rem;
+  }
+  form input {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  /* Botón un poco más chico */
+  form button {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  /* Enlaces con letra más chica */
+  .links {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+}
