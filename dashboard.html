@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Panel principal de FAMI para visualizar ingresos, gastos, categorías y mensajería interna."
+    />
+    <meta
+      name="keywords"
+      content="finanzas personales, dashboard, gastos, ingresos, control financiero, FAMI, presupuesto, ahorro"
+    />
+    <title>FAMI - Dashboard</title>
+    <link rel="stylesheet" href="./shared/base.css" />
+    <link rel="stylesheet" href="./usuario/dashboard.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header class="dashboard-header">
+      <img src="./shared/logoFAMI.png" alt="Logo FAMI" class="logo-dashboard" />
+      <div class="user-actions">
+        <span id="userName">¡Hola, Usuario!</span>
+        <a href="#">Configuración</a> |
+        <a href="#">Salir</a>
+      </div>
+    </header>
+
+    <!-- Gráficos -->
+    <section class="dashboard-graphs">
+      <div class="graph ingresos">[Gráfico Ingresos]</div>
+      <div class="graph gastos">[Gráfico Gastos]</div>
+      <div class="graph categorias">[Gráfico Categorías]</div>
+    </section>
+
+    <!-- Tablas -->
+    <section class="dashboard-tables">
+      <div class="table-container ultimos-gastos">
+        <h2>Últimos 10 Gastos</h2>
+        <div class="table-placeholder">[Tabla Últimos Gastos]</div>
+      </div>
+
+      <div class="table-container top-gastos">
+        <h2>Top 5 Gastos del Año</h2>
+        <div class="table-placeholder">[Tabla Top Gastos]</div>
+      </div>
+    </section>
+
+    <!-- Mensajería -->
+    <section class="dashboard-messages">
+      <h2>Mensajería Interna</h2>
+      <div class="messages-placeholder">[Área de mensajes]</div>
+    </section>
+
+    <script src="./usuario/dashboard.js"></script>
+  </body>
+</html>

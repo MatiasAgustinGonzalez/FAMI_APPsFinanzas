@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("auth.js cargado");
+
   // --- LOGIN ---
   const loginForm = document.getElementById("loginForm");
   if (loginForm) {
@@ -56,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     recoverForm.addEventListener("submit", function (e) {
       e.preventDefault();
       const email = document.getElementById("email").value.trim();
-      if (!email || !email.includes("@") || !email.includes(".")) {
+      if (!email || !email.includes("@")) {
         alert("Por favor ingresá un correo válido.");
         return;
       }
