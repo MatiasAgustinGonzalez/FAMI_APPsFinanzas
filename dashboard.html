@@ -47,9 +47,46 @@
     </section>
 
     <!-- Mensajería -->
+    <!-- Mensajería -->
     <section class="dashboard-messages">
       <h2>Mensajería Interna</h2>
-      <div class="messages-placeholder">[Área de mensajes]</div>
+
+      <!-- Lista de mensajes -->
+      <div class="messages-list">
+        <!-- Ejemplo de mensaje más reciente -->
+        <div class="message">
+          <div class="message-header">
+            <img src="./shared/avatar1.png" alt="Avatar" class="avatar" />
+            <span class="message-user">Mati</span>
+            <time class="message-timestamp" datetime="2024-05-07T10:30">
+              07 May 2024 – 10:30
+            </time>
+          </div>
+          <div class="message-body">Recordá pagar el gas</div>
+        </div>
+
+        <div class="message">
+          <div class="message-header">
+            <img
+              src="./shared/avatarFamily.png"
+              alt="Avatar Familiar"
+              class="avatar"
+            />
+            <span class="message-user">Familia</span>
+            <time class="message-timestamp" datetime="2024-05-07T09:15">
+              07 May 2024 – 09:15
+            </time>
+          </div>
+          <div class="message-body">Ya pagué el alquiler, chicos</div>
+        </div>
+        <!-- …más mensajes… -->
+      </div>
+
+      <!-- Campo para enviar nuevo mensaje -->
+      <div class="message-input">
+        <textarea placeholder="Escribir tu mensaje…" rows="2"></textarea>
+        <button>Enviar</button>
+      </div>
     </section>
 
     <script src="./usuario/dashboard.js"></script>
